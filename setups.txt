@@ -1,0 +1,12 @@
+
+For c++ on windows through bash on windows
+-	activate bash on windows:
+	activate DEVELOPER MODE then activate WINDOWS SUBSYSTEM FOR LINUX from TURN WINDOWS FEATURES ON OR OFF
+	restart
+	run bash from start for walkthrough installation or run "lxrun /install /y" for automatic installation (default user "root", no password)
+-	C: is at /mnt/c in bash
+-	sudo apt-get install g++
+	to compile:	g++ hello.cpp -o hello
+	to execute:	./hello
+-	bash commands can be executed indirectly through cmd with eg. <bash -c "/mnt/c/hello">
+	<g++ hello.cpp -o hello> compiles and creates "runable" file hello

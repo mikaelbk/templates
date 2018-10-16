@@ -1,0 +1,4 @@
+\newcommand{name}[num]{definition}
+
+e.g.:
+\newcommand{\bigexp}[2]{ \qty(#1)^{#2} }

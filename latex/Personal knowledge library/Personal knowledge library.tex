@@ -1,0 +1,60 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage[norsk]{babel}
+\usepackage{physics}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage[margin = 1in]{geometry}
+\lstset{frame=single, showstringspaces = false}
+\author{Mikael B. Kiste}
+\title{Personal knowledge library}
+\newcommand{\h}{\mathrm{h}}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	\section{Physics}
+		\subsection{Constant translational acceleration in a straight line}
+			\begin{gather}\label{}
+				v(t)=\int a \dd{t}=at+v_0\\
+				s(t)=\int v \dd{t}=\frac{1}{2}at^2+v_0t+s_0\\
+			\end{gather}
+		
+		\subsection{Moores law}
+		The observation that the number of transistors in a dense integrated circuit doubles approximately every two years
+		
+		\subsection{Escape velocity}
+		\begin{align}
+		-E_k = E_p\\
+		-\frac{1}{2}mv^2 = \int_{r_0}^{\infty}-G\frac{Mm}{r^2}\dd{r}\\
+		-\frac{1}{2}mv^2 = \eval{G\frac{Mm}{r}}_{r_0}^\infty\\
+		-\frac{1}{2}mv^2 = -G\frac{Mm}{r_0}\\
+		v = \sqrt{2\frac{M}{r_0}}
+		\end{align}
+
+		\subsection{Relativity}
+			\begin{align}
+				E^2 = (m_0c^2)^2 + (pc)^2\\
+				\gamma = \frac{1}{\sqrt{1-v^2/c^2}} 
+			\end{align}
+			\subsubsection{Photons}
+			\begin{align}
+				m_0 = 0\\
+				E = pc = \h\nu
+			\end{align}
+
+	\newpage
+	\section{Mathematics}
+		\subsection{Complex numbers}
+		\begin{equation}
+			\mathbb{C} \bar{\mathbb{C}} = (a+ib) (a-ib) = a^2 + b^2 = \qty(\sqrt{a^2 + b^2})^2 = \abs{\mathbb{C}}^2
+		\end{equation}
+\end{document}

@@ -1,0 +1,103 @@
+\documentclass[a4paper, 10pt]{article}
+%\documentclass[font size, paper size, twoside/oneside, landscape]{article, report, minimal, beamer}
+
+\usepackage[norsk]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{listings}
+\usepackage{graphicx}
+
+\title{My \LaTeX \space guidebook}
+\author{Mikael Bergedalen Kiste}
+
+\begin{document}
+ \maketitle
+ 
+ \section{Text manipulation}
+ 
+\subsection{Structure}
+ This subsection examplifies common keywords that manipulate text structure. \\You can get a new line like this. \newline Or like this.
+ \subsubsection{Subsections}
+ You can have a subsection in a subsection like this
+ \paragraph{Paragraph}
+ Here you may put text that goes as a paragraph. Use with caution.
+ \subparagraph{Subparagraph} You can even have subparagraphs!
+ 
+ \subsection{Text emphasis faces}
+ \textbf{Bold}\\
+ {\it Italic}\\
+ \texttt{Typeface}\\
+ \underline {Underline}
+ 
+ \subsection{Font sizes}
+  {\tiny tiny}\\
+  {\scriptsize scriptsize}\\
+  {\footnotesize footnotesize}\\
+  {\small small} \\
+  {\normalsize normalsize}\\
+  {\large large}\\
+  {\Large Large}\\
+  {\LARGE LARGE}\\
+  {\huge huge}\\
+  {\Huge Huge}
+
+ \subsection{Fonts}
+  {\normalfont normalfont}\\
+  {\rmfamily rmfamily}\\
+  {\sffamily sffamily}\\
+  {\ttfamily ttfamily}
+  %http://www.tug.dk/FontCatalogue/
+  
+ \subsection{Tables}
+  \begin{tabular}[h!]{|l|c|r|}
+   \textbf{Header1}&\textbf{Header2}&\textbf{Header3}\\
+   \hline
+   one&two&three\\
+   four&five&six\\
+   seven&eight&nine
+  \end{tabular}
+ 
+% \subsection{Figures}
+%  \begin{figure}[h!]
+%   \centering
+%   \includegraphics[width=\textwidth]{img/latexlogo.png}
+%   \caption{\LaTeX logo.}
+%  \end{figure}
+
+ \subsection{Lists: Itemize}
+  \begin{itemize}
+   \item
+   This is a list item.
+   \item
+   This is another list item.
+  \end{itemize}
+  
+ \subsection{Lists: Enumerate}
+  \begin{enumerate}
+   \item
+    This is the first enumerated item
+   \begin{enumerate}
+    \item
+     This is a subenumerated item
+   \end{enumerate}
+  \end{enumerate}
+  
+ \subsection{Lists: Description}
+  \begin{description}
+   \item[*] This is a list item.
+   \item[+] This is another list item.
+  \end{description}
+
+ \subsection{Emph, footnotes and verbatim}
+  \begin{verbatim} Everything is allowed in verbatim!\\ \end{verbatim}
+  Creating a footnote is easy. \footnote{You just do it like that.}
+ 
+ \section{Mathmode}
+  $ E=m c^{2} $ 
+
+ \section{Something else}
+ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+\end{document}

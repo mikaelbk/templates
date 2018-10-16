@@ -1,0 +1,2 @@
+\usepackage[margin = 1in]{geometry}
+\lstset{frame=single, showstringspaces = false}
